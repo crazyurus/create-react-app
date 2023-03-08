@@ -2,6 +2,7 @@
   "name": "create-react-app",
   "version": "1.0.0",
   "private": true,
+  "description": "Web site created using create-react-app with craco",
   "scripts": {
     "prepare": "husky install",
     "start": "craco start",

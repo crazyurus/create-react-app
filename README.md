@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# 快速使用 Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+这是一个基于 `create-react-app` 的项目模版，可以快速创建 React 项目
 
-## Available Scripts
+主要功能：
+- 基于 `carco` 来定制 Webpack 配置
+- 支持 TypeScript
+- 移除了测试和 `WebVital` 相关代码
+- 包管理器替换为 `pnpm`
+- 添加了 `less` 和 CSS Modules 的支持
+- 添加了性能分析命令
+- 添加了 `husky` `lint-staged` 以检查代码风格
 
-In the project directory, you can run:
+## 准备工作
 
-### `npm start`
+1. 需要全局安装 `pnpm`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+$ npm install pnpm -g
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. 点击 GitHub 的 **Use this template**，基于此模版创建一个新的项目
+3. 将你的项目 `clone` 到本地
+4. 运行 `pnpm install` 安装依赖
+5. 运行 `pnpm run start` 启动项目
 
-### `npm test`
+## 可用脚本
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+在这个项目中，你可以使用：
 
-### `npm run build`
+### `pnpm run start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+使用开发模式运行你的项目，可打开 [http://localhost:3000](http://localhost:3000) 在浏览器中查看。当文件修改时页面会自动更新
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `pnpm run build`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+使用生产模式构建你的项目，产物在 `dist` 目录下，构建时我们会对产物进行优化以拥有更好的性能，构建产物中的文件名均有 hash 值，并对内容进行了压缩。
 
-### `npm run eject`
+构建完成后就可以部署了，可以参考 https://facebook.github.io/create-react-app/docs/deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `pnpm run analyze`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+使用生产模式构建你的项目，并对项目的构建产物和构建时间进行分析。完成后将会在浏览器打开分析报告
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 目录结构
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+项目文件均在 `src` 目录下，需要关注的是：
+- 公共组件放在 `components` 下
+- 页面组件放在 `pages` 下
+- 路由配置在 `Router.tsx` 中
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](./LICENSE)
