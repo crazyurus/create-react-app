@@ -1,3 +1,4 @@
+/* eslint-env node */
 const path = require('path');
 const CracoLessPlugin = require('craco-less');
 const CracoCSSModulesPlugin = require('craco-css-modules');

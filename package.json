@@ -47,7 +47,7 @@
   },
   "cracoConfig": "./config/craco.js",
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --fix"
+    "src/**/*.{js,ts,tsx}": "eslint --fix"
   },
   "packageManager": "pnpm@7.29.0"
 }
