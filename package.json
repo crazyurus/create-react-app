@@ -1,10 +1,11 @@
 {
-  "name": "create-react-app-arco",
+  "name": "create-react-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "craco start",
-    "build": "craco build"
+    "build": "craco build",
+    "analyze": "cross-env ANALYZE=TRUE craco build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,8 +16,14 @@
     "@craco/types": "^7.0.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "craco-css-modules": "^1.0.3",
+    "craco-less": "^2.0.0",
+    "cross-env": "^7.0.3",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5"
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "typescript": "^4.9.5",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-subresource-integrity": "5.2.0-rc.1"
   },
   "browserslist": {
     "production": [
@@ -30,6 +37,6 @@
       "last 1 safari version"
     ]
   },
-  "cracoConfig": "./config/craco.ts",
+  "cracoConfig": "./config/craco.js",
   "packageManager": "pnpm@7.29.0"
 }
