@@ -10,7 +10,8 @@
 - 包管理器替换为 `pnpm`
 - 添加了 `scss` 和 CSS Modules 的支持
 - 添加了性能分析命令
-- 添加了 `husky` `lint-staged` 以检查代码风格
+- 添加了 `eslint` `stylelint` `prettier`
+- 添加了 `husky` `lint-staged` 以 commit 时检查
 - 保存时会自动格式化
 
 ## 准备工作
