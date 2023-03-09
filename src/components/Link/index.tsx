@@ -9,12 +9,7 @@ function Link(props: PropsWithChildren<Props>): JSX.Element {
   const { url, children } = props;
 
   return (
-    <a
-      className={styles.link}
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a className={styles.link} href={url} target="_blank" rel="noopener noreferrer">
       {children}
     </a>
   );
