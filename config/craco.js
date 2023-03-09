@@ -43,7 +43,7 @@ module.exports = {
     },
     configure(options) {
       options.output.crossOriginLoading = 'anonymous';
-      options.devtool = isProduction ? 'hidden-source-map' : 'eval';
+      options.devtool = isProduction ? 'hidden-source-map' : 'cheap-module-source-map';
       options.watchOptions = {
         ignored: /node_modules/,
       };

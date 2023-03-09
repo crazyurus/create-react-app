@@ -3,6 +3,7 @@
 这是一个基于 `create-react-app` 的项目模版，可以快速创建 React 项目
 
 主要功能：
+
 - 基于 `carco` 来定制 Webpack 配置
 - 支持 TypeScript
 - 移除了测试和 `WebVital` 相关代码
@@ -10,6 +11,7 @@
 - 添加了 `scss` 和 CSS Modules 的支持
 - 添加了性能分析命令
 - 添加了 `husky` `lint-staged` 以检查代码风格
+- 保存时会自动格式化
 
 ## 准备工作
 
@@ -22,7 +24,7 @@ $ npm install pnpm -g
 2. 点击 GitHub 的 **Use this template**，基于此模版创建一个新的项目
 3. 将你的项目 `clone` 到本地
 4. 运行 `pnpm install` 安装依赖
-5. 运行 `pnpm run start` 启动项目
+5. 运行 `pnpm run start` 启动项目。在 VSCode 中，也可以通过 **运行和调试** 功能通过界面启动，并在 VSCode 中断点调试
 
 ## 可用脚本
 
@@ -45,6 +47,7 @@ $ npm install pnpm -g
 ## 目录结构
 
 项目文件均在 `src` 目录下，需要关注的是：
+
 - 公共组件放在 `components` 下
 - 页面组件放在 `pages` 下
 - 路由配置在 `Router.tsx` 中
