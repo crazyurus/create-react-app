@@ -7,6 +7,7 @@ specifiers:
   '@craco/types': ^7.0.0
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
+  classnames: ^2.3.2
   craco-css-modules: ^1.0.4
   craco-esbuild: ^0.5.1
   cross-env: ^7.0.3
@@ -18,7 +19,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.8.2
-  react-scripts: 5.0.1
+  react-scripts: ^5.0.1
   sass: ^1.58.3
   speed-measure-webpack-plugin: ^1.5.0
   stylelint: ^15.2.0
@@ -26,9 +27,10 @@ specifiers:
   stylelint-config-standard-scss: ^7.0.1
   typescript: ^4.9.5
   webpack-bundle-analyzer: ^4.8.0
-  webpack-subresource-integrity: 5.2.0-rc.1
+  webpack-subresource-integrity: ^5.1.0
 
 dependencies:
+  classnames: 2.3.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.8.2_biqbaboplfbrettd7655fr4n2y
@@ -56,7 +58,7 @@ devDependencies:
   stylelint-config-standard-scss: 7.0.1_stylelint@15.2.0
   typescript: 4.9.5
   webpack-bundle-analyzer: 4.8.0
-  webpack-subresource-integrity: 5.2.0-rc.1
+  webpack-subresource-integrity: 5.1.0
 
 packages:
 
@@ -4224,6 +4226,10 @@ packages:
       isobject: 3.0.1
       static-extend: 0.1.2
     dev: true
+
+  /classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: false
 
   /clean-css/5.3.2:
     resolution: {integrity: sha512-JVJbM+f3d3Q704rF4bqQ5UUyTtuJ0JRKNbTKVEeujCCBoMdkEi+V+e8oktO9qGQNSvHrFTM6JZRXrUvGR1czww==}
@@ -11868,6 +11874,10 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
+  /typed-assert/1.0.9:
+    resolution: {integrity: sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg==}
+    dev: true
+
   /typedarray-to-buffer/3.1.5:
     resolution: {integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==}
     dependencies:
@@ -12220,8 +12230,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /webpack-subresource-integrity/5.2.0-rc.1:
-    resolution: {integrity: sha512-SyjlQ3VZVwpNeVPIMpYf9Qt6oTnq9G3lCcr5YNwjW9TfUoip70MlB9ZDNhJPhkHvfvajMDQwZFfDVVL1QVwnLQ==}
+  /webpack-subresource-integrity/5.1.0:
+    resolution: {integrity: sha512-sacXoX+xd8r4WKsy9MvH/q/vBtEHr86cpImXwyg74pFIpERKt6FmB8cXpeuh0ZLgclOlHI4Wcll7+R5L02xk9Q==}
     engines: {node: '>= 12'}
     peerDependencies:
       html-webpack-plugin: '>= 5.0.0-beta.1 < 6'
@@ -12229,6 +12239,8 @@ packages:
     peerDependenciesMeta:
       html-webpack-plugin:
         optional: true
+    dependencies:
+      typed-assert: 1.0.9
     dev: true
 
   /webpack/5.75.0:

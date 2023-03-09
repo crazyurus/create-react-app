@@ -10,6 +10,7 @@
     "analyze": "cross-env ANALYZE=TRUE craco build"
   },
   "dependencies": {
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2"
@@ -29,7 +30,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.58.3",
     "speed-measure-webpack-plugin": "^1.5.0",
     "stylelint": "^15.2.0",
@@ -37,7 +38,7 @@
     "stylelint-config-standard-scss": "^7.0.1",
     "typescript": "^4.9.5",
     "webpack-bundle-analyzer": "^4.8.0",
-    "webpack-subresource-integrity": "5.2.0-rc.1"
+    "webpack-subresource-integrity": "^5.1.0"
   },
   "browserslist": {
     "production": [
