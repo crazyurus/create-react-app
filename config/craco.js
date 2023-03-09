@@ -1,6 +1,6 @@
 /* eslint-env node */
 const path = require('path');
-const CracoLessPlugin = require('craco-less');
+const CracoESBuildPlugin = require('craco-esbuild');
 const CracoCSSModulesPlugin = require('craco-css-modules');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
@@ -14,10 +14,10 @@ process.env.GENERATE_SOURCEMAP = !isProduction.toString();
 module.exports = {
   plugins: [
     {
-      plugin: CracoLessPlugin,
+      plugin: CracoCSSModulesPlugin,
     },
     {
-      plugin: CracoCSSModulesPlugin,
+      plugin: CracoESBuildPlugin,
     },
   ],
   style: {

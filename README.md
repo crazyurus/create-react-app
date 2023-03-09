@@ -7,7 +7,7 @@
 - 支持 TypeScript
 - 移除了测试和 `WebVital` 相关代码
 - 包管理器替换为 `pnpm`
-- 添加了 `less` 和 CSS Modules 的支持
+- 添加了 `scss` 和 CSS Modules 的支持
 - 添加了性能分析命令
 - 添加了 `husky` `lint-staged` 以检查代码风格
 
@@ -48,6 +48,10 @@ $ npm install pnpm -g
 - 公共组件放在 `components` 下
 - 页面组件放在 `pages` 下
 - 路由配置在 `Router.tsx` 中
+
+## FAQ
+
+TODO
 
 ## License
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo, Link } from '@/components';
-import styles from './index.less';
+import styles from './index.scss';
 
 function Home(): JSX.Element {
   return (

@@ -1,5 +1,5 @@
 import React, { type PropsWithChildren } from 'react';
-import styles from './index.less';
+import styles from './index.scss';
 
 function Layout(props: PropsWithChildren): JSX.Element {
   return (
