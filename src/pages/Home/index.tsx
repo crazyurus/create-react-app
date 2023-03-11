@@ -7,7 +7,7 @@ function Home(): JSX.Element {
     <div className={styles.container}>
       <Logo />
       <p>
-        Edit <code>src/App.tsx</code> and save to reload.
+        Edit <code>src/pages/Home/index.tsx</code> and save to reload.
       </p>
       <Link url="https://reactjs.org">Learn React</Link>
     </div>

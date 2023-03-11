@@ -6,9 +6,10 @@
 
 - 基于 `carco` 来定制 Webpack 配置
 - 支持 TypeScript
+- 支持配置式路由
 - 移除了测试和 `WebVital` 相关代码
 - 包管理器替换为 `pnpm`
-- 添加了 `scss` 和 CSS Modules 的支持
+- 添加了 `sass` 和 CSS Modules 的支持
 - 添加了性能分析命令
 - 添加了 `eslint` `stylelint` `prettier`
 - 添加了 `husky` `lint-staged` 以 commit 时检查
@@ -51,7 +52,8 @@ $ npm install pnpm -g
 
 - 公共组件放在 `components` 下
 - 页面组件放在 `pages` 下
-- 路由配置在 `Router.tsx` 中
+- 布局组件放在 `layouts` 下
+- 路由配置在 `routes.ts` 中
 
 ## FAQ
 
