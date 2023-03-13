@@ -55,10 +55,6 @@ $ npm install pnpm -g
 - 布局组件放在 `layouts` 下
 - 路由配置在 `routes.ts` 中
 
-## FAQ
-
-TODO
-
 ## License
 
 [MIT](./LICENSE)

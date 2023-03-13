@@ -7,7 +7,7 @@ import routes from './routes';
 function Router(): JSX.Element {
   return (
     <Routes>
-      {routes.map((props) => {
+      {routes.map(props => {
         const { path, page: Page } = props;
 
         return <Route key={path} element={<Page />} {...props} />;
