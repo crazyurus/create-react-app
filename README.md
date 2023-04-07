@@ -1,6 +1,8 @@
 # 快速使用 Create React App
 
-这是一个基于 `create-react-app` 的项目模版，可以快速创建 React 项目
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/1gjyCE?referralCode=ds7amN)
+
+这是一个基于 `create-react-app` 的项目模版，可以快速创建 React 项目。预览地址：https://create-react-app.up.railway.app
 
 主要功能：
 
