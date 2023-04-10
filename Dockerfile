@@ -15,9 +15,15 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:1.23.4 AS runner
+FROM base AS runner
+WORKDIR /app
 
-COPY nginx.conf nginx.conf
-ARG PORT=80
-RUN envsubst '${PORT}' < nginx.conf > /etc/nginx/conf.d/default.conf
-COPY --from=builder /app/dist /usr/share/nginx/html
+ENV NODE_ENV production
+
+RUN npm install http-server -g
+
+COPY --from=builder /app/dist ./dist
+
+EXPOSE 8080
+
+CMD ["http-server", "./dist", "-d", "false"]
