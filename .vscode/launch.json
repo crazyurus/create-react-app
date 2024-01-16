@@ -2,10 +2,22 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "pnpm start",
-      "command": "pnpm run start",
+      "name": "Start",
       "request": "launch",
-      "type": "node-terminal"
+      "runtimeArgs": ["run", "start"],
+      "runtimeExecutable": "pnpm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "console": "integratedTerminal",
+      "env": {
+        "BROWSER": "NONE"
+      },
+      "serverReadyAction": {
+        "action": "startDebugging",
+        "name": "Launch Chrome",
+        "pattern": "Compiled successfully",
+        "killOnServerStop": true
+      }
     },
     {
       "name": "Launch Chrome",
@@ -13,6 +25,15 @@
       "type": "chrome",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Build",
+      "request": "launch",
+      "runtimeArgs": ["run", "build"],
+      "runtimeExecutable": "pnpm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "console": "integratedTerminal"
     }
   ]
 }
