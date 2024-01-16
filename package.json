@@ -4,10 +4,27 @@
   "private": true,
   "description": "Web site created using create-react-app with craco",
   "scripts": {
-    "prepare": "husky install",
-    "start": "craco start",
+    "analyze": "cross-env ANALYZE=TRUE craco build",
     "build": "craco build",
-    "analyze": "cross-env ANALYZE=TRUE craco build"
+    "prepare": "husky install",
+    "start": "craco start"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": "eslint --fix",
+    "src/**/*": "prettier --write --ignore-unknown",
+    "src/**/*.{css,scss}": "stylelint"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -33,6 +50,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
+    "prettier-plugin-packagejson": "^2.4.9",
     "react-scripts": "^5.0.1",
     "sass": "^1.58.3",
     "speed-measure-webpack-plugin": "^1.5.0",
@@ -43,23 +61,6 @@
     "webpack-bundle-analyzer": "^4.8.0",
     "webpack-subresource-integrity": "^5.1.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "cracoConfig": "./config/craco.js",
-  "lint-staged": {
-    "src/**/*.{js,ts,tsx}": "eslint --fix",
-    "src/**/*": "prettier --write --ignore-unknown",
-    "src/**/*.{css,scss}": "stylelint"
-  },
-  "packageManager": "pnpm@8.14.0"
+  "packageManager": "pnpm@8.14.0",
+  "cracoConfig": "./config/craco.js"
 }

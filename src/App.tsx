@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import Layout from './layouts/Basic';
 import NotFound from './pages/Error/404';
 import routes from './routes';

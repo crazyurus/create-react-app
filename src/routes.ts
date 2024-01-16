@@ -1,4 +1,5 @@
 import type { PathRouteProps } from 'react-router-dom';
+
 import Home from './pages/Home';
 
 interface Route extends PathRouteProps {
@@ -9,8 +10,8 @@ interface Route extends PathRouteProps {
 const routes: Route[] = [
   {
     path: '/',
-    page: Home,
-  },
+    page: Home
+  }
 ];
 
 export default routes;
