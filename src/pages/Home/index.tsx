@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Link, Logo } from '@/components';
 
 import styles from './index.scss';
